@@ -26,13 +26,13 @@ end
 def exactly_divide(an_integer, a_divider)
   # TODO: return division of an_integer by a_divider (computing the floating division, NOT the euclidean one)
   # example: exactly_divide(13, 4) => 3.25
-  
+  an_integer.fdiv(a_divider)
 end
 
 def divisible_by_two?(an_integer)
   # TODO: return true if an_integer is divisible by 2
   # example: divisible_by_two?(6) => true
-  
+  return an_integer.even?
 end
 
 def random_subset(an_array, sample_size)
